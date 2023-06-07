@@ -14,7 +14,8 @@
             display: flex;
 
         }
-        body{
+
+        body {
             background-color: rgb(224, 194, 231);
         }
 
@@ -34,48 +35,79 @@
             color: white;
 
         }
-        .outerbox{
+
+        .outerbox {
             width: 100%;
             height: 500px;
-        
+
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
-        .left-image{
-            width: 600px;
-            height: 400px;
-            background:url(https://newsonair.com/wp-content/uploads/2022/09/FcZluO4XEAMRvBT-696x453.jpg)
-        }
-       .chatbox{
-        height: 500px;
-        width: 400px;
-        background-color: white;
 
-    }
-    .sendbtn{
-        background-color: green;
-        padding: 10px;
-        width: 100%;
-        height: 50px;
-        font-size: 30px;
-        color: white;
-        margin-top: 20px;
-       
-    } 
-    .wrap-send{
-        display: flex;
-        justify-content: center;
-    }
-    .cancelbtn{
-        background-color: red;
-        padding: 10px;
-        width: 100%;
-        height: 50px;
-        font-size: 30px;
-        color: white;
-        margin-top: 20px;
-    }
+        .left-image {
+            width: 700px;
+            height: auto;
+            background-image: url(./FcZluO4XEAMRvBT-696x453.jpg);
+            margin-top: 30px;
+        }
+
+        .chatbox {
+            height: 500px;
+            width: 400px;
+            background-color: white;
+
+        }
+
+        .sendbtn {
+            background-color: green;
+            padding: 10px;
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+            margin-top: 20px;
+
+        }
+
+        .wrap-send {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cancelbtn {
+            background-color: red;
+            padding: 10px;
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+            margin-top: 20px;
+        }
+        .box1 h1{
+            color: white;
+        }
+        @media only screen and (max-width:500px){
+            .box1 {
+            height: auto;
+            width: 100%;
+            background-color: red;
+        }
+        .left-image {
+            width: 700px;
+            height: 450px;
+            background-image: url(./FcZluO4XEAMRvBT-696x453.jpg);
+            margin-top: 30px;
+        }
+        .outerbox {
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        }
     </style>
 </head>
 
@@ -94,18 +126,20 @@
 
     </div>
     <div class="outerbox">
-        <div class="left-image"></div>
+        <div class="left-image">
+           
+        </div>
 
         <div class="chatbox">
             <h1>Chat</h1>
             <h2>message</h2>
-        <textarea name="" placeholder="type message..." id="50" cols="50" rows="15"></textarea>
-        <div class="wrap-send">
-        <button class="sendbtn">send</button>
-        </div>
-        <div class="wrap-send">
-            <button class="cancelbtn">close</button>
-    </div>
+            <textarea name="" placeholder="type message..." id="50" cols="50" rows="15"></textarea>
+            <div class="wrap-send">
+                <button class="sendbtn">send</button>
+            </div>
+            <div class="wrap-send">
+                <button class="cancelbtn">close</button>
+            </div>
         </div>
 
 
